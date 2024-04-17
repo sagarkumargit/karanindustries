@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProductImage from "../../Images/product/1.jpg";
 
 const CardProductList = (props) => {
   const product = props.data;
@@ -6,7 +7,7 @@ const CardProductList = (props) => {
     <div className="card">
       <div className="row g-0">
         <div className="col-md-3 text-center">
-          <img src={product.img} className="img-fluid" alt="..." />
+          <img src={ProductImage} className="img-fluid" alt="..." />
         </div>
         <div className="col-md-6">
           <div className="card-body">
@@ -52,7 +53,7 @@ const CardProductList = (props) => {
             )}
           </div>
         </div>
-        <div className="col-md-3">
+        {/* <div className="col-md-3">
           <div className="card-body">
             <div className="mb-2">
               <span className="fw-bold h5">${product.price}</span>
@@ -94,7 +95,7 @@ const CardProductList = (props) => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
